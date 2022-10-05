@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compressor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div id="logo_container">
+            <img src="logo.jpg" height=100% width=100% alt="File Compressor">
+        </div>
+        <p class="text-light" id="text_property"> Compresso</p>
+    </nav>
+    <div id="container">
+        <div class="text_box" style="overflow-y: scroll">
+            <span id="treearea" style="width: 100%; text-align: center; font-size: medium;">
+                Tree Structure Will Be Displayed Here !!
+            </span>
+        </div>
+        <div class="text_box" style="overflow-y: scroll">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large;">
+                Operation info will be shown here !!
+            </span>
+        </div>
+    </div>
+    <div>
+        <form method="post" enctype="multipart/form-data" style="display: inline-block; margin:10px;">
+            <input type="file" id="uploadedFile"/>
+        </form>
+        <button type="button" class="btn btn-success center_buttons" id="encode">&nbsp;&nbsp;Encode&nbsp;&nbsp;</button>
+        <button type="button" class="btn btn-danger center_buttons" id="decode" style="margin-top:5px">&nbsp;&nbsp;Decode&nbsp;&nbsp;</button>
+    </div>
+    <script src="heap.js"></script>
+    <script src="huffman.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
